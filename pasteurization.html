@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pasteurization PHE Design — Sigma Design</title>
+  <meta name="description" content="A multi-section gasketed plate heat exchanger with regeneration, heating, and cooling zones for HTST milk pasteurization." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="Sigma Design logo" />
+        <span>Sigma Design</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="distillation.html">Distillation</a></li>
+        <li><a href="pasteurization.html">Pasteurization</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Projects &nbsp;/&nbsp; Pasteurization</div>
+      <h1>Pasteurization PHE Design</h1>
+      <p class="project-subtitle">A multi-section gasketed plate heat exchanger with regeneration, heating, and cooling zones — integrated with a holding tube for HTST milk pasteurization.</p>
+
+      <figure class="design-figure">
+        <img src="assets/phe-design.png" alt="Pasteurization process diagram showing balance tank, plate heat exchanger with heat/regen/cool zones, holding tube, and pasteurized milk tank" />
+        <figcaption>Process diagram — PHE with 41 plates (31 regen / 5 cool / 3 heat / 2 non-thermal), 25.18 m holding tube.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="intro-block">
+        <p>The design methodology for this project focuses on the thermal and mechanical integration of a <strong>Plate Heat Exchanger (PHE)</strong> and a <strong>Holding Tube</strong> for the pasteurization of milk. Based on the target pasteurization temperature (72 °C) and the initial temperature of the raw milk (4 °C), the total heat duty (Q) was calculated using the energy balance equation, with specific heat capacity and density values for milk sourced from literature.</p>
+        <p>A multi-section PHE was selected as the primary heating unit due to its high efficiency and hygienic suitability. The design parameters were established by calculating the Logarithmic Mean Temperature Difference (LMTD), estimating the Overall Heat Transfer Coefficient (U) based on industry standards for dairy applications, determining the Total Heat Transfer Area (A) required, and calculating the necessary <strong>number of plates (N = 41)</strong> using standard plate dimensions.</p>
+        <p>To meet legal HTST pasteurization standards, a holding tube was designed to provide a <strong>15-second residence time</strong>. The required volume was derived from the volumetric flow rate, the tube length was calculated using the cross-sectional area of standard sanitary piping, and a safety factor was applied to compensate for the velocity profile of turbulent flow — ensuring every particle of milk reaches the required time-temperature combination.</p>
+        <p>AISI 316 stainless steel was designated as the primary material for all product-contact surfaces, validated for its superior corrosion resistance against milk chlorides and CIP chemicals. The Reynolds Number was recalculated for both the heat exchanger channels and the holding tube to confirm turbulent flow — maximizing heat transfer efficiency and minimizing fouling.</p>
+      </div>
+
+      <nav class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="materials">Materials &amp; Method</button>
+        <button class="tab-btn" data-tab="equipment">Equipment List</button>
+        <button class="tab-btn" data-tab="cost">Cost Analysis</button>
+      </nav>
+
+      <article class="tab-panel active" data-tab="materials">
+        <div class="method-body">
+          <h3>2.1 Project Methodology</h3>
+          <p>The design methodology focuses on the thermal and mechanical integration of a Plate Heat Exchanger (PHE) and a Holding Tube for the pasteurization of milk. The process was conducted through the following systematic steps:</p>
+          <ol>
+            <li><strong>Thermal Load Determination and Energy Balance</strong> — Based on the target pasteurization temperature (72 °C) and the initial raw milk temperature (4 °C), the total heat duty (Q) was calculated using the energy balance equation.</li>
+            <li><strong>Heat Exchanger Selection and Sizing</strong> — LMTD calculation, U estimation, total heat transfer area determination, and number-of-plates calculation using standard plate dimensions.</li>
+            <li><strong>Holding Tube Design and Residence Time Analysis</strong> — 15-second residence time, volume from volumetric flow rate, length from sanitary piping cross-section, safety factor for turbulent velocity profile.</li>
+            <li><strong>Material Selection and Hygienic Compliance</strong> — AISI 316 stainless steel for all product-contact surfaces, validated for corrosion resistance against milk chlorides and CIP chemicals.</li>
+            <li><strong>Flow Regime Validation</strong> — Reynolds Number recalculated for PHE channels and holding tube to confirm turbulent flow, maximizing heat transfer efficiency and minimizing fouling.</li>
+          </ol>
+
+          <h3>2.1.2 System Mapping</h3>
+          <p>The system is mapped to ensure a continuous and hygienic flow from the initial balance tank to the final feeding tank. The milk is first directed from the balance tank to the Plate Heat Exchanger, which serves as the core thermal processing unit. To maximize energy efficiency, a <strong>regeneration section</strong> is integrated within the PHE layout — here, the outgoing hot pasteurized milk pre-heats the incoming cold raw milk (4 °C), significantly reducing the external energy required for the subsequent heating stage.</p>
+          <p>After regeneration, the milk enters the heating section of the PHE to reach the target pasteurization temperature of 72 °C. It is then directed into the Holding Tube, where it remains at temperature for exactly 15 seconds to achieve the necessary safety standards. The tube is designed with a specific slope to prevent air pockets and ensure self-drainage. Once the holding time is complete, the milk returns to the PHE for regenerative cooling and final cooling, then is transferred directly to the feeding tank. The entire piping layout is designed with AISI 316 stainless steel to maintain a closed, sterile environment.</p>
+
+          <h3>2.1.3 Component Selection and Reasons for Selection</h3>
+          <ul>
+            <li><strong>Pumping System:</strong> A centrifugal pump was selected for its hygienic design and ability to provide a constant flow rate. A check valve was installed to prevent backflow that could damage the impeller.</li>
+            <li><strong>Thermal Units:</strong> A Plate Heat Exchanger was chosen as the primary thermal processing unit due to its high U values and efficiency. A holding tube was integrated to provide the necessary residence time for pasteurization.</li>
+            <li><strong>Flow Control:</strong> Gate valves for process isolation during maintenance, and flow diversion valves to ensure that any milk not reaching the required pasteurization temperature is safely redirected.</li>
+            <li><strong>Tank System:</strong> A balance tank at the beginning of the process maintains a constant head for the pump, while a feeding tank serves as the final collection point for the pasteurized milk.</li>
+          </ul>
+
+          <h3>2.1.4 Flow Velocity and Flow Regime</h3>
+          <p>The average fluid velocity was calculated based on the continuous flow rate through the DN50 sanitary piping. The Reynolds Number was evaluated to confirm a turbulent flow regime. Achieving turbulence is essential not only for friction calculations but also for maximizing the heat transfer coefficient within the Plate Heat Exchanger and ensuring uniform temperature distribution in the Holding Tube.</p>
+        </div>
+      </article>
+
+      <article class="tab-panel" data-tab="equipment">
+        <p class="eq-intro">The equipment utilized in this 10 ton/hour milk pasteurization system comprises balance and feed tanks, a plate heat exchanger, a designated holding tube, specialized piping, various valves including a critical flow diversion valve, and multiple centrifugal pumps. Each component possesses specific mechanical and thermal characteristics, playing a vital role in ensuring a continuous, thermally efficient, and microbiologically safe operation.</p>
+
+        <ol class="eq-list">
+          <li class="eq-item">
+            <div>
+              <h3>Plate Heat Exchanger (Gasketed Plate and Frame Hygienic)</h3>
+              <p>Thermal processing is achieved using a multi-section gasketed plate heat exchanger. The <strong>Alfa Laval Front 10</strong> model was selected — a premium range heat exchanger specifically engineered for dairy, food, and beverage applications requiring highly hygienic conditions.</p>
+              <p>The heat transfer plates are manufactured from AISI 316/316L stainless steel, providing robust mechanical strength and excellent corrosion resistance against cleaning chemicals. These clip plates feature a specialized chevron-type pattern that optimizes the distribution area and fluid entry points. The system utilizes FDA-compliant NBR or EPDM gaskets, guaranteeing uncompromising cleanliness and safe food contact.</p>
+              <p>The unit consists of a total of <strong>41 plates</strong>, strategically distributed across different thermal zones to maximize energy efficiency:</p>
+              <ul>
+                <li><strong>Regeneration Section (31 plates):</strong> The largest segment, using thermal energy from exiting hot pasteurized milk to pre-heat incoming cold raw milk — significantly reducing overall heating and cooling utility costs.</li>
+                <li><strong>Cooling Section (5 plates):</strong> Rapidly reduces the temperature of the pasteurized milk down to safe storage levels using chilled water.</li>
+                <li><strong>Heating Section (3 plates):</strong> Provides the final thermal energy required to bring the pre-heated milk to the exact target pasteurization temperature.</li>
+                <li><strong>Non-Thermal Plates (2 plates):</strong> Serve as intermediate blind/end plates to securely separate the distinct thermal zones.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Holding Tube (AISI 316 SS)</h3>
+              <p>The holding tube is the most critical segment of the pasteurization process, as it ensures microbiological safety and efficiency by maintaining the milk at the target temperature for the required residence time. In this design, a <strong>25.18-meter long AISI 316 stainless steel pipeline with a nominal diameter of DN50</strong> was selected.</p>
+              <p>The molybdenum content of AISI 316 grade provides superior resistance to thermal stress and corrosive Cleaning-in-Place (CIP) chemicals, preventing pitting and ensuring a long service life. The pipeline is strategically designed to be inclined against the flow (sloped upwards in the direction of flow) — this inclination ensures the tube remains completely filled with fluid at all times, preventing air pockets that could compromise the heating process, and facilitates full drainage during maintenance.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Isolation Valves (Gate Valve — Wide Open)</h3>
+              <p>Gate valves are used as isolation valves in the pasteurization system to start or stop fluid flow. In the fully open position, they offer very low resistance to flow, minimizing pressure losses. Three gate valves were used in the fully open state at key points such as pump suction, pump discharge, and tank connections — allowing safe maintenance, cleaning operations, and system control without interrupting the entire process.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Check Valve</h3>
+              <p>A check valve allows fluid to flow in only one direction and prevents reverse flow in the system. It operates without external control and plays a critical role in protecting equipment and maintaining process safety. The swing check valve consists of a hinged disc that swings open in the direction of flow and closes automatically when reverse flow occurs.</p>
+              <p>In this system, the swing check valve is installed in the discharge line, particularly before the vertical section of the pipe. Since the fluid is transported to an elevated tank, there is a risk that the liquid may flow backward due to gravity when the pump stops. The check valve prevents this reverse flow, protecting the centrifugal pump from potential damage.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Diversion Valve (Three-Way Ball Valve, DN50)</h3>
+              <p>The Flow Diversion Valve is an indispensable safety and control component installed immediately at the exit of the holding tube. A 3-way ball-type flow diversion valve with a nominal diameter of DN50, constructed entirely from AISI 316 stainless steel, offers superior mechanical durability and high corrosion resistance.</p>
+              <p>The primary function is to act as the ultimate safeguard for product quality and public health. It continuously monitors the temperature of the milk exiting the holding tube. If the milk fails to reach the required pasteurization temperature, the valve automatically actuates to block the forward flow to the cooling section and redirects the milk through a bypass line back to the heating section. The 3-way configuration also provides operational flexibility for waste management — in emergency scenarios, the fluid can be safely evacuated and discharged to the drain line.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Centrifugal Pumps</h3>
+              <p>To efficiently process 10 tons of milk per hour, three different centrifugal pumps are utilized within the system. These pumps serve as the primary motive force to drive the milk through the various stages of the pasteurization line. Centrifugal pumps are widely preferred in the dairy industry due to their hygienic design and their ability to handle sensitive fluids such as milk without causing structural damage or excessive agitation.</p>
+              <p>To ensure operational safety and facilitate maintenance, the pumps are equipped with isolation gate valves, allowing operators to isolate a specific pump for routine maintenance or cleaning without needing to drain the entire pipeline. Check valves are installed at the discharge points to prevent backflow.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>90° Elbows</h3>
+              <p>Elbows are pipe fittings used to change the direction of fluid flow within a piping system. 90° elbows are the most commonly used fittings, allowing the flow to be redirected at a right angle. They are essential components in piping design, especially when space constraints or equipment layout require sudden changes in flow direction.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Piping (Stainless Steel, AISI 316, DN50)</h3>
+              <p>A total length of <strong>29 m of AISI 316 stainless steel pipe (DN50)</strong> was selected to ensure the safe transfer of milk throughout the pasteurization line. The primary reason for choosing AISI 316 over standard stainless steel (e.g., SS304) is the addition of molybdenum in its alloy, which significantly enhances the pipe's resistance to pitting and corrosion against high temperatures, chlorides, and harsh cleaning acids.</p>
+              <p>Given the inherent nature of the pasteurization process — characterized by continuous thermal stress and heavy sanitation cycles — AISI 316 pipes ensure the highest level of food safety by preventing microbial accumulation or material degradation.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <article class="tab-panel" data-tab="cost">
+        <div class="cost-grid">
+          <div class="cost-card">
+            <div class="cost-card-title">Equipment Cost Breakdown</div>
+            <div class="cost-card-img">
+              <img src="assets/phe-cost-equipment.png" alt="Itemized equipment cost breakdown for pasteurization system" />
+            </div>
+          </div>
+          <div class="cost-card cost-card-full">
+            <div class="cost-card-title">Total Capital Cost Summary</div>
+            <div class="cost-card-img">
+              <img src="assets/phe-cost-total.png" alt="Capital cost summary table for pasteurization PHE design" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" />
+        <span>Sigma Design Engineers Team</span>
+      </div>
+      <p>FDE450 Process Design • Ankara University, Faculty of Engineering</p>
+      <p class="footer-meta">© <span data-year></span> Sigma Design — Since 2024</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distillation Unit Design for Corn Ethanol Plant — Sigma Design</title>
+  <meta name="description" content="A 100,000 L/day fractional distillation column for corn ethanol — McCabe–Thiele design, hydraulic sizing, equipment selection, and cost analysis." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="Sigma Design logo" />
+        <span>Sigma Design</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="distillation.html">Distillation</a></li>
+        <li><a href="pasteurization.html">Pasteurization</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Projects &nbsp;/&nbsp; Distillation</div>
+      <h1>Distillation Unit Design for Corn Ethanol Plant</h1>
+      <p class="project-subtitle">A 100,000 L/day fractional distillation column engineered to concentrate fermented ethanol to its 95.6% azeotropic purity.</p>
+
+      <figure class="design-figure">
+        <img src="assets/distillation-design.png" alt="Distillation column process diagram showing feed, trays, condenser, reflux drum, and reboiler" />
+        <figcaption>Process diagram — 13.5 m column, 2.27 m internal diameter, 24 sieve trays.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="intro-block">
+        <p>A distillation unit with a capacity of 100,000 L/day was designed to purify the ethanol obtained as a result of fermentation in the corn ethanol production facility. Based on continuous steady-state mass balances, a total feed stream (F) of 1135 kmol/h with an initial ethanol mole fraction of <em>x<sub>F</sub></em> = 0.065 (15%) is processed using a calculated relative volatility of α = 7.98.</p>
+        <p>The system successfully concentrates the mixture to a high-purity distillate (D) of 77.69 kmol/h at the target azeotropic composition of <em>x<sub>D</sub></em> = 0.895 (95.6%) while discharging a bottom waste stream (B) of 1057 kmol/h with a minimal concentration of <em>x<sub>B</sub></em> = 0.004 (1%).</p>
+        <p>Rigorous stage estimation via the McCabe–Thiele method under a specified operating reflux ratio of R = 2.77 and a saturated liquid feed condition (q = 1.0) determined the requirement of 19 theoretical trays. By incorporating an industrial overall tray efficiency factor of 80%, the column was specified with <strong>24 actual physical sieve trays</strong>, with the optimal feed introduction point located at the 4th tray from the top.</p>
+        <p>To ensure stable, flood-free hydraulics under heavy-fouling mash conditions, a conservative maximum linear vapor velocity of <em>U<sub>max</sub></em> = 0.6 m/s was utilized, yielding an optimized column internal diameter of 2.27 m. Integrating a tray spacing of 0.5 m with 1.0 m mechanical headspace allowances at both top and bottom resulted in a final total structural column height of <strong>13.5 meters</strong>.</p>
+        <p>The economic feasibility evaluation indicates a total equipment cost of <strong>1,573,728.36 TL</strong>, culminating in a Total Capital Cost of <strong>9,071,113.35 TL</strong> after the inclusion of standard installation module factors, engineering expenses, and a 15% contingency margin.</p>
+      </div>
+
+      <nav class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="materials">Materials &amp; Method</button>
+        <button class="tab-btn" data-tab="equipment">Equipment List</button>
+        <button class="tab-btn" data-tab="cost">Cost Analysis</button>
+      </nav>
+
+      <article class="tab-panel active" data-tab="materials">
+        <div class="method-body">
+          <h3>2.1 Project Methodology (Method of Attack)</h3>
+          <p>The design methodology for this project focuses on the thermodynamic, hydraulic, and structural design of a fractional distillation column for the concentration of a corn-based ethanol–water mixture. The calculations commenced with the determination of the thermophysical and equilibrium properties of the binary system under atmospheric operating conditions (relative volatility α = 7.98).</p>
+
+          <h3>2.1.1 System Mapping</h3>
+          <p>The distillation system is mapped to ensure a continuous, steady-state, and efficient mass transfer operation from the initial corn-ethanol fermentation plant output to the final storage units. The process feed stream (F) is continuously directed into the distillation column at a specific vertical location known as the feed tray. To optimize the separation, the column is structurally divided into two core operational zones: the upper <strong>rectifying section</strong> and the lower <strong>stripping section</strong>.</p>
+          <p>Inside the column, a continuous countercurrent flow is established, where the rising vapor phase meets the descending liquid phase on internal contact stages. The overhead vapor exiting the top of the column is completely liquefied in a total condenser. To maintain the necessary liquid-to-vapor balance required for enrichment, a portion of this liquefied stream is returned to the top tray as reflux (L), while the remaining fraction is collected as the high-purity distillate product (D). Concurrently, the liquid reaching the bottom of the column enters a reboiler thermal unit, where it is partially vaporized to provide the rising vapor stream (V), while the remaining heavy phase is continuously discharged as the bottom waste stream (B).</p>
+
+          <h3>2.1.2 Component Selection and Reasons for Selection</h3>
+          <ul>
+            <li><strong>Internal Contacting Stages:</strong> Sieve trays were selected as the primary internal contact equipment due to their high area-to-volume ratio, low manufacturing cost, ease of on-site cleaning, and structural simplicity, which minimizes maintenance downtime in high-capacity bioethanol production.</li>
+            <li><strong>Structural Material and Piping:</strong> AISI 304 stainless steel was designated for the column shell, internal trays, and all connecting process lines to provide superior resistance against thermal stress and the corrosive nature of organic ethanol–water mixtures at elevated boiling temperatures. Standard DN100 piping was incorporated to ensure optimal fluid velocities and minimize localized pressure drops.</li>
+            <li><strong>Flow and Reboiler Infrastructure:</strong> A total condenser and a kettle-type reboiler were integrated into the loop to facilitate stable phase changes, utilizing precise flow control valves on the reflux line to maintain a strict reflux ratio during operational fluctuations.</li>
+          </ul>
+
+          <h3>2.1.3 Material Balance and Determination of Flow Rates</h3>
+          <p>The design process initiated with the conversion of the industrial plant capacity, given as a volumetric flow rate of 100,000 L/day of ethanol at a target purity of 95.6%, into annual mass and molar flow boundaries under steady-state assumptions. The vapor-liquid equilibrium behavior of the binary system was defined by incorporating a constant relative volatility value of α = 7.98. By utilizing the specified feed (<em>x<sub>F</sub></em> = 0.065), distillate (<em>x<sub>D</sub></em> = 0.895), and bottom (<em>x<sub>B</sub></em> = 0.004) mole fractions, an overall and component-specific mass balance was established. Through the simultaneous solution of these conservation equations, the molar flow rates of the distillate (D = 77.69 kmol/h) and the bottom waste stream (B = 1057 kmol/h) were explicitly determined.</p>
+
+          <h3>2.1.4 Stage Estimation via the McCabe–Thiele Method</h3>
+          <p>To determine the physical contact steps required for the target purity, a rigorous equilibrium analysis was conducted based on the McCabe–Thiele methodology. The operating lines representing the material balances of the system were formulated and plotted onto the Vapor-Liquid Equilibrium (VLE) diagram. The Rectifying Operating Line (ROL) was established originating from the coordinate point (<em>x<sub>D</sub></em>, <em>y<sub>D</sub></em>) on the 45° diagonal, while the Stripping Operating Line (SOL) was drawn originating from the coordinate point (<em>x<sub>B</sub></em>, <em>y<sub>B</sub></em>). Since the feed enters the system as a saturated liquid (q = 1.0), the feed line (q-line) was constructed as a strict vertical line passing through <em>x<sub>F</sub></em>. The theoretical stage requirements were estimated by step-by-step graphical constructions, and the total actual tray number was determined by dividing the theoretical stage count by an empirical tray efficiency factor.</p>
+
+          <h3>2.1.5 Hydraulic Analysis and Tray Diameter Design</h3>
+          <p>A comprehensive hydraulic analysis was carried out to size the column cross-section and prevent critical operational failures such as flooding, weeping, or entrainment. Crucial design parameters were derived from empirical capacity charts, yielding an <em>x<sub>F</sub></em> factor of 0.065 and a corresponding Y intersection value of 0.3.</p>
+          <p>The hydraulic evaluation integrated material stream conditions across key sections of the column, specifically accounting for a distillate flow rate of 77.69 kmol/h above the feed stage, a bottom product flow rate of 1057 kmol/h below the feed stage, and localized thermal profiles, including a feed section temperature of 362.5 K and a reboiler temperature of 372.6 K. Based on these vapor-liquid load distributions, the maximum allowable vapor velocity for the column was established at 0.6 m/s, and the nominal internal tray diameter was optimized to <strong>2.27 m</strong> to ensure stable and flood-free tray hydraulics.</p>
+
+          <h3>2.1.6 Determination of Column Height Configuration</h3>
+          <p>In the final stage of the structural engineering process, the total mechanical height of the distillation tower was computed by integrating the calculated internal stages and external spatial requirements. The height of the active mass transfer section was determined by multiplying the total number of tray spacing intervals by the designated tray spacing allocation (0.5 m). A mechanical vapor-liquid disengagement and liquid holdup space (H<sub>bottom</sub>) was designated below the bottom tray to facilitate connection with the reboiler, and a top headspace (H<sub>top</sub>) was integrated above the top tray to eliminate liquid droplet entrainment into the vapor line — completing the final structural height layout of <strong>13.5 m</strong>.</p>
+        </div>
+      </article>
+
+      <article class="tab-panel" data-tab="equipment">
+        <p class="eq-intro">The equipment utilized in this 100,000 L/day corn ethanol distillation system comprises the main distillation column, internal contacting trays, an overhead condenser, a reflux drum, a bottom reboiler, specialized piping, and various centrifugal pumps. Each component possesses specific mass transfer and thermal characteristics, playing a vital role in ensuring a continuous, thermally efficient, and thermodynamically stable separation process.</p>
+
+        <ol class="eq-list">
+          <li class="eq-item">
+            <div>
+              <h3>Distillation Column</h3>
+              <p>The distillation column serves as the central vessel of the separation process, providing the essential environment for continuous counter-current contact between the ascending vapor and the descending liquid phases. To safely process the 100,000 L/day capacity and achieve the target 95.6% azeotropic ethanol concentration, the column is engineered with a total physical height of <strong>13.5 m</strong> and an internal diameter of <strong>2.27 m</strong>.</p>
+              <p>Internally, the column is equipped with <strong>24 actual contacting trays</strong>. A critical design parameter is the feed introduction point, strategically located at the 4th tray from the top. This placement optimally divides the column into a short rectifying section (above the feed) to concentrate the ethanol, and a larger stripping section (below the feed) to recover ethanol from the descending corn mash. The entire column shell and internal tray assemblies are constructed from AISI 304L low-carbon stainless steel.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Reboiler (Heat Exchanger)</h3>
+              <p>The reboiler is a critical heat exchange unit situated at the base of the distillation column, functioning as the primary thermal driver for the entire separation process. A shell-and-tube type reboiler (kettle or thermosyphon configuration) is utilized to receive the ethanol-depleted liquid arriving at the bottom of the column and supply the necessary latent heat of vaporization to partially vaporize this bottom stream.</p>
+              <p>The generated vapor is continuously reintroduced into the bottom of the column, creating the upward vapor traffic required to strip the more volatile ethanol molecules from the descending liquid phase across the trays. To withstand continuous thermal stress and prevent localized corrosion from bottom residues, the unit is constructed from AISI 304 stainless steel.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Isolation Valves (Gate Valve — Wide Open)</h3>
+              <p>Gate valves are used as isolation valves within the distillation system to safely start or stop the flow of process fluids. Their primary function is not to regulate flow rates, but to provide a definitively fully open or fully closed condition. In the fully open position, gate valves offer negligible resistance to flow, which fundamentally minimizes pressure drops across the interconnected separation equipment.</p>
+              <p>Several gate valves are strategically positioned in the fully open state to isolate critical sections of the system — at reflux and bottom pump suctions and discharges, the feed inlet line, and connections to the reboiler and reflux drum.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Condenser (Shell and Tube Heat Exchanger)</h3>
+              <p>The overhead condenser is a fundamental heat exchange unit located at the top of the distillation column. Its primary role is to cool the hot ethanol vapor exiting the column and convert it back into a liquid state.</p>
+              <p>The shell and tube heat exchanger consists of a large outer cylindrical shell containing a bundle of smaller stainless steel tubes. A cooling medium — typically chilled water — flows through the inside of the tubes, while the hot ethanol vapor is directed into the large open space of the shell surrounding the tubes. The heat from the vapor is efficiently transferred across the metal tube walls to the cooling water without the two fluids ever mixing.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Diversion Valve (Three-Way)</h3>
+              <p>The flow diversion valve, functioning as an automated 3-way control valve, is a critical flow-regulating component positioned immediately downstream of the reflux drum. As the fully condensed liquid ethanol exits the reflux drum, the valve precisely divides the incoming stream into two paths based on the operational reflux ratio of R = 2.77:</p>
+              <ul>
+                <li><strong>Reflux Stream (73.5%):</strong> continuously routed back to the uppermost tray of the distillation column to maintain the necessary vapor-liquid equilibrium.</li>
+                <li><strong>Final Distillate (26.5%):</strong> directed to be cooled and sent to the final product storage tanks as 95.6% pure ethanol.</li>
+              </ul>
+              <p>Constructed from AISI 304L stainless steel, this automated valve operates under the continuous supervision of the plant's automated control system.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Reflux Drum</h3>
+              <p>The reflux drum is a holding tank located immediately after the overhead condenser, with the main purpose of collecting the liquid ethanol that has just been cooled and condensed.</p>
+              <p>Once the liquid ethanol is collected, it is continuously divided into two separate streams — a specific portion pumped back to the top of the distillation column as reflux, and the remaining portion drawn off and sent to storage as the final 95.6% ethanol product. By maintaining a steady liquid level inside, the drum ensures that the system's pumps always have enough fluid to operate smoothly without pulling in air.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Centrifugal Pumps</h3>
+              <p>Centrifugal pumps are essential mechanical devices used throughout the distillation system to transport liquids from one piece of equipment to another. They operate by using a rapidly spinning impeller to create the necessary force and pressure to push fluids through the piping network.</p>
+              <p>In this plant, centrifugal pumps are primarily utilized in three key locations: the <strong>feed pump</strong> continuously drives the raw corn mash mixture into the middle section of the column; the <strong>reflux pump</strong> draws the condensed liquid ethanol from the reflux drum; and the <strong>bottoms pump</strong> safely removes the hot water and remaining heavy residues from the base of the column. All process pumps are constructed from stainless steel with leak-proof mechanical seals.</p>
+            </div>
+          </li>
+
+          <li class="eq-item">
+            <div>
+              <h3>Piping (Stainless Steel, 304L — DN50 / DN80 / DN100)</h3>
+              <p>The piping network acts as the veins of the distillation system, safely connecting all equipment and allowing fluids to move continuously. All process pipes are constructed from durable AISI 304 stainless steel, plus 90° elbows to redirect flow at right angles where layout requires.</p>
+              <p>Three different pipe diameters were selected based on the state and volume of the flowing material:</p>
+              <ul>
+                <li><strong>DN100:</strong> Between the top of the distillation column and the overhead condenser, where hot ethanol vapor expands and takes up significantly more space than a liquid.</li>
+                <li><strong>DN80:</strong> Main liquid flows handling larger volumes — the feed line, the connections between the column base and the reboiler, and the final bottoms removal line.</li>
+                <li><strong>DN50:</strong> Pure liquid streams — the liquid ethanol exiting the reflux drum and the portion returning to the top of the column.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <article class="tab-panel" data-tab="cost">
+        <div class="cost-grid">
+          <div class="cost-card">
+            <div class="cost-card-title">Process Economics — Summary</div>
+            <div class="cost-card-img">
+              <img src="assets/distillation-cost-overall.png" alt="Process economics summary diagram showing equipment cost, grass roots capital, and total capital cost" />
+            </div>
+          </div>
+          <div class="cost-card">
+            <div class="cost-card-title">Equipment Cost Breakdown</div>
+            <div class="cost-card-img">
+              <img src="assets/distillation-cost-equipment.png" alt="Itemized equipment cost breakdown table" />
+            </div>
+          </div>
+          <div class="cost-card cost-card-full">
+            <div class="cost-card-title">Capital Cost Summary — Table 10.11</div>
+            <div class="cost-card-img">
+              <img src="assets/distillation-cost-main.png" alt="Full capital cost summary table including direct project expenses, indirect expenses, bare module cost, total module cost, and grass roots capital" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" />
+        <span>Sigma Design Engineers Team</span>
+      </div>
+      <p>FDE450 Process Design • Ankara University, Faculty of Engineering</p>
+      <p class="footer-meta">© <span data-year></span> Sigma Design — Since 2024</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
